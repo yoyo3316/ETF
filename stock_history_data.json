@@ -307,12 +307,12 @@
       },
       "00982A": {
         "etf_name": "群益台灣精選強棒主動式ETF基金",
-        "current_count": 9000,
-        "current_weight": 0.08,
+        "current_count": 0,
+        "current_weight": 0.0,
         "max_count": 60000,
         "max_count_date": "2025/08/06",
-        "min_count": 9000,
-        "min_count_date": "2025/08/21",
+        "min_count": 0,
+        "min_count_date": "2025/09/24",
         "history": [
           {
             "date": "2025/08/06",
@@ -353,6 +353,14 @@
             "count_change": -9000,
             "weight_change": -0.09,
             "status": "減持"
+          },
+          {
+            "date": "2025/09/24",
+            "count": 0,
+            "weight": 0.0,
+            "count_change": -9000,
+            "weight_change": -0.08,
+            "status": "出清"
           }
         ]
       }
@@ -1904,12 +1912,12 @@
     "etf_holdings": {
       "00980A": {
         "etf_name": "野村臺灣智慧優選主動式ETF",
-        "current_count": 8000,
-        "current_weight": 0.46,
+        "current_count": 0,
+        "current_weight": 0.0,
         "max_count": 16000,
         "max_count_date": "2025/08/21",
-        "min_count": 8000,
-        "min_count_date": "2025/09/05",
+        "min_count": 0,
+        "min_count_date": "2025/09/24",
         "history": [
           {
             "date": "2025/08/06",
@@ -1958,17 +1966,25 @@
             "count_change": -8000,
             "weight_change": -0.35,
             "status": "減持"
+          },
+          {
+            "date": "2025/09/24",
+            "count": 0,
+            "weight": 0.0,
+            "count_change": -8000,
+            "weight_change": -0.46,
+            "status": "出清"
           }
         ]
       },
       "00981A": {
         "etf_name": "統一台股增長",
-        "current_count": 49000,
-        "current_weight": 0.47,
+        "current_count": 0,
+        "current_weight": 0.0,
         "max_count": 91000,
         "max_count_date": "2025/09/05",
-        "min_count": 30000,
-        "min_count_date": "2025/09/02",
+        "min_count": 0,
+        "min_count_date": "2025/10/07",
         "history": [
           {
             "date": "2025/09/02",
@@ -2001,6 +2017,14 @@
             "count_change": -42000,
             "weight_change": -0.58,
             "status": "減持"
+          },
+          {
+            "date": "2025/10/07",
+            "count": 0,
+            "weight": 0.0,
+            "count_change": -49000,
+            "weight_change": -0.47,
+            "status": "出清"
           }
         ]
       },
@@ -4059,8 +4083,8 @@
         "current_weight": 2.84,
         "max_count": 4081000,
         "max_count_date": "2025/08/14",
-        "min_count": 300000,
-        "min_count_date": "2025/10/23",
+        "min_count": 0,
+        "min_count_date": "2025/08/22",
         "history": [
           {
             "date": "2025/08/06",
@@ -4143,12 +4167,20 @@
             "status": "減持"
           },
           {
+            "date": "2025/08/22",
+            "count": 0,
+            "weight": 0.0,
+            "count_change": -613000,
+            "weight_change": -0.47,
+            "status": "出清"
+          },
+          {
             "date": "2025/10/23",
             "count": 300000,
             "weight": 0.28,
-            "count_change": -313000,
-            "weight_change": -0.19,
-            "status": "減持"
+            "count_change": 0,
+            "weight_change": 0.28,
+            "status": "首次出現"
           },
           {
             "date": "2025/10/27",
@@ -4176,12 +4208,12 @@
     "etf_holdings": {
       "00980A": {
         "etf_name": "野村臺灣智慧優選主動式ETF",
-        "current_count": 135000,
-        "current_weight": 0.64,
+        "current_count": 0,
+        "current_weight": 0.0,
         "max_count": 135000,
         "max_count_date": "2025/08/08",
-        "min_count": 121000,
-        "min_count_date": "2025/08/06",
+        "min_count": 0,
+        "min_count_date": "2025/09/05",
         "history": [
           {
             "date": "2025/08/06",
@@ -4206,17 +4238,25 @@
             "count_change": 5000,
             "weight_change": -0.06,
             "status": "增持"
+          },
+          {
+            "date": "2025/09/05",
+            "count": 0,
+            "weight": 0.0,
+            "count_change": -135000,
+            "weight_change": -0.64,
+            "status": "出清"
           }
         ]
       },
       "00981A": {
         "etf_name": "統一台股增長",
-        "current_count": 734000,
-        "current_weight": 0.6,
+        "current_count": 0,
+        "current_weight": 0.0,
         "max_count": 1499000,
         "max_count_date": "2025/08/29",
-        "min_count": 556000,
-        "min_count_date": "2025/08/26",
+        "min_count": 0,
+        "min_count_date": "2025/09/08",
         "history": [
           {
             "date": "2025/08/26",
@@ -4249,17 +4289,25 @@
             "count_change": -765000,
             "weight_change": -0.69,
             "status": "減持"
+          },
+          {
+            "date": "2025/09/08",
+            "count": 0,
+            "weight": 0.0,
+            "count_change": -734000,
+            "weight_change": -0.6,
+            "status": "出清"
           }
         ]
       },
       "00982A": {
         "etf_name": "群益台灣精選強棒主動式ETF基金",
-        "current_count": 270000,
-        "current_weight": 0.26,
+        "current_count": 0,
+        "current_weight": 0.0,
         "max_count": 1796000,
         "max_count_date": "2025/08/14",
-        "min_count": 270000,
-        "min_count_date": "2025/08/21",
+        "min_count": 0,
+        "min_count_date": "2025/08/22",
         "history": [
           {
             "date": "2025/08/06",
@@ -4348,6 +4396,14 @@
             "count_change": -270000,
             "weight_change": -0.28,
             "status": "減持"
+          },
+          {
+            "date": "2025/08/22",
+            "count": 0,
+            "weight": 0.0,
+            "count_change": -270000,
+            "weight_change": -0.26,
+            "status": "出清"
           }
         ]
       }
@@ -5184,12 +5240,12 @@
     "etf_holdings": {
       "00980A": {
         "etf_name": "野村臺灣智慧優選主動式ETF",
-        "current_count": 1417000,
-        "current_weight": 0.69,
+        "current_count": 0,
+        "current_weight": 0.0,
         "max_count": 1417000,
         "max_count_date": "2025/09/09",
-        "min_count": 940000,
-        "min_count_date": "2025/08/06",
+        "min_count": 0,
+        "min_count_date": "2025/09/24",
         "history": [
           {
             "date": "2025/08/06",
@@ -5254,6 +5310,14 @@
             "count_change": 43000,
             "weight_change": -0.05,
             "status": "增持"
+          },
+          {
+            "date": "2025/09/24",
+            "count": 0,
+            "weight": 0.0,
+            "count_change": -1417000,
+            "weight_change": -0.69,
+            "status": "出清"
           }
         ]
       }
@@ -6970,12 +7034,12 @@
     "etf_holdings": {
       "00980A": {
         "etf_name": "野村臺灣智慧優選主動式ETF",
-        "current_count": 100000,
-        "current_weight": 1.48,
+        "current_count": 0,
+        "current_weight": 0.0,
         "max_count": 227000,
         "max_count_date": "2025/08/21",
-        "min_count": 100000,
-        "min_count_date": "2025/09/24",
+        "min_count": 0,
+        "min_count_date": "2025/10/28",
         "history": [
           {
             "date": "2025/08/06",
@@ -7056,6 +7120,14 @@
             "count_change": -21000,
             "weight_change": -0.32,
             "status": "減持"
+          },
+          {
+            "date": "2025/10/28",
+            "count": 0,
+            "weight": 0.0,
+            "count_change": -100000,
+            "weight_change": -1.48,
+            "status": "出清"
           }
         ]
       },
@@ -8062,12 +8134,12 @@
       },
       "00982A": {
         "etf_name": "群益台灣精選強棒主動式ETF基金",
-        "current_count": 93000,
-        "current_weight": 0.17,
+        "current_count": 0,
+        "current_weight": 0.0,
         "max_count": 618000,
         "max_count_date": "2025/08/14",
-        "min_count": 93000,
-        "min_count_date": "2025/08/21",
+        "min_count": 0,
+        "min_count_date": "2025/08/22",
         "history": [
           {
             "date": "2025/08/06",
@@ -8156,6 +8228,14 @@
             "count_change": -93000,
             "weight_change": -0.19,
             "status": "減持"
+          },
+          {
+            "date": "2025/08/22",
+            "count": 0,
+            "weight": 0.0,
+            "count_change": -93000,
+            "weight_change": -0.17,
+            "status": "出清"
           }
         ]
       }
@@ -8453,12 +8533,12 @@
       },
       "00982A": {
         "etf_name": "群益台灣精選強棒主動式ETF基金",
-        "current_count": 16000,
-        "current_weight": 0.32,
+        "current_count": 0,
+        "current_weight": 0.0,
         "max_count": 106000,
         "max_count_date": "2025/08/14",
-        "min_count": 16000,
-        "min_count_date": "2025/08/21",
+        "min_count": 0,
+        "min_count_date": "2025/08/22",
         "history": [
           {
             "date": "2025/08/06",
@@ -8547,6 +8627,14 @@
             "count_change": -16000,
             "weight_change": -0.33,
             "status": "減持"
+          },
+          {
+            "date": "2025/08/22",
+            "count": 0,
+            "weight": 0.0,
+            "count_change": -16000,
+            "weight_change": -0.32,
+            "status": "出清"
           }
         ]
       }
@@ -9095,12 +9183,12 @@
       },
       "00981A": {
         "etf_name": "統一台股增長",
-        "current_count": 455000,
-        "current_weight": 1.09,
+        "current_count": 0,
+        "current_weight": 0.0,
         "max_count": 562000,
         "max_count_date": "2025/08/07",
-        "min_count": 454000,
-        "min_count_date": "2025/08/11",
+        "min_count": 0,
+        "min_count_date": "2025/08/26",
         "history": [
           {
             "date": "2025/08/06",
@@ -9133,17 +9221,25 @@
             "count_change": 1000,
             "weight_change": -0.54,
             "status": "增持"
+          },
+          {
+            "date": "2025/08/26",
+            "count": 0,
+            "weight": 0.0,
+            "count_change": -455000,
+            "weight_change": -1.09,
+            "status": "出清"
           }
         ]
       },
       "00982A": {
         "etf_name": "群益台灣精選強棒主動式ETF基金",
-        "current_count": 117000,
-        "current_weight": 0.21,
+        "current_count": 0,
+        "current_weight": 0.0,
         "max_count": 782000,
         "max_count_date": "2025/08/14",
-        "min_count": 117000,
-        "min_count_date": "2025/08/21",
+        "min_count": 0,
+        "min_count_date": "2025/08/22",
         "history": [
           {
             "date": "2025/08/06",
@@ -9224,6 +9320,14 @@
             "count_change": -118000,
             "weight_change": -0.23,
             "status": "減持"
+          },
+          {
+            "date": "2025/08/22",
+            "count": 0,
+            "weight": 0.0,
+            "count_change": -117000,
+            "weight_change": -0.21,
+            "status": "出清"
           }
         ]
       }
@@ -9871,12 +9975,12 @@
     "etf_holdings": {
       "00980A": {
         "etf_name": "野村臺灣智慧優選主動式ETF",
-        "current_count": 160000,
-        "current_weight": 0.75,
+        "current_count": 0,
+        "current_weight": 0.0,
         "max_count": 257000,
         "max_count_date": "2025/09/09",
-        "min_count": 116000,
-        "min_count_date": "2025/08/06",
+        "min_count": 0,
+        "min_count_date": "2025/10/28",
         "history": [
           {
             "date": "2025/08/06",
@@ -9957,6 +10061,14 @@
             "count_change": -97000,
             "weight_change": -0.46,
             "status": "減持"
+          },
+          {
+            "date": "2025/10/28",
+            "count": 0,
+            "weight": 0.0,
+            "count_change": -160000,
+            "weight_change": -0.75,
+            "status": "出清"
           }
         ]
       }
@@ -10553,12 +10665,12 @@
     "etf_holdings": {
       "00980A": {
         "etf_name": "野村臺灣智慧優選主動式ETF",
-        "current_count": 37000,
-        "current_weight": 0.4,
+        "current_count": 0,
+        "current_weight": 0.0,
         "max_count": 37000,
         "max_count_date": "2025/08/08",
-        "min_count": 34000,
-        "min_count_date": "2025/08/06",
+        "min_count": 0,
+        "min_count_date": "2025/09/05",
         "history": [
           {
             "date": "2025/08/06",
@@ -10583,6 +10695,14 @@
             "count_change": 1000,
             "weight_change": -0.01,
             "status": "增持"
+          },
+          {
+            "date": "2025/09/05",
+            "count": 0,
+            "weight": 0.0,
+            "count_change": -37000,
+            "weight_change": -0.4,
+            "status": "出清"
           }
         ]
       },
@@ -11337,12 +11457,12 @@
     "etf_holdings": {
       "00980A": {
         "etf_name": "野村臺灣智慧優選主動式ETF",
-        "current_count": 15000,
-        "current_weight": 0.1,
+        "current_count": 0,
+        "current_weight": 0.0,
         "max_count": 15000,
         "max_count_date": "2025/08/06",
-        "min_count": 15000,
-        "min_count_date": "2025/08/06",
+        "min_count": 0,
+        "min_count_date": "2025/09/05",
         "history": [
           {
             "date": "2025/08/06",
@@ -11351,6 +11471,14 @@
             "count_change": 0,
             "weight_change": 0.1,
             "status": "首次出現"
+          },
+          {
+            "date": "2025/09/05",
+            "count": 0,
+            "weight": 0.0,
+            "count_change": -15000,
+            "weight_change": -0.1,
+            "status": "出清"
           }
         ]
       }
@@ -11362,12 +11490,12 @@
     "etf_holdings": {
       "00980A": {
         "etf_name": "野村臺灣智慧優選主動式ETF",
-        "current_count": 94000,
-        "current_weight": 0.6,
+        "current_count": 0,
+        "current_weight": 0.0,
         "max_count": 94000,
         "max_count_date": "2025/08/08",
-        "min_count": 85000,
-        "min_count_date": "2025/08/06",
+        "min_count": 0,
+        "min_count_date": "2025/09/05",
         "history": [
           {
             "date": "2025/08/06",
@@ -11392,6 +11520,14 @@
             "count_change": 3000,
             "weight_change": -0.01,
             "status": "增持"
+          },
+          {
+            "date": "2025/09/05",
+            "count": 0,
+            "weight": 0.0,
+            "count_change": -94000,
+            "weight_change": -0.6,
+            "status": "出清"
           }
         ]
       }
@@ -11926,12 +12062,12 @@
     "etf_holdings": {
       "00980A": {
         "etf_name": "野村臺灣智慧優選主動式ETF",
-        "current_count": 399000,
-        "current_weight": 0.73,
+        "current_count": 0,
+        "current_weight": 0.0,
         "max_count": 399000,
         "max_count_date": "2025/09/09",
-        "min_count": 265000,
-        "min_count_date": "2025/08/06",
+        "min_count": 0,
+        "min_count_date": "2025/10/28",
         "history": [
           {
             "date": "2025/08/06",
@@ -11996,6 +12132,14 @@
             "count_change": 12000,
             "weight_change": 0.02,
             "status": "增持"
+          },
+          {
+            "date": "2025/10/28",
+            "count": 0,
+            "weight": 0.0,
+            "count_change": -399000,
+            "weight_change": -0.73,
+            "status": "出清"
           }
         ]
       },
@@ -12190,12 +12334,12 @@
     "etf_holdings": {
       "00980A": {
         "etf_name": "野村臺灣智慧優選主動式ETF",
-        "current_count": 263000,
-        "current_weight": 0.37,
+        "current_count": 0,
+        "current_weight": 0.0,
         "max_count": 882000,
         "max_count_date": "2025/09/09",
-        "min_count": 263000,
-        "min_count_date": "2025/10/28",
+        "min_count": 0,
+        "min_count_date": "2025/10/30",
         "history": [
           {
             "date": "2025/08/06",
@@ -12268,6 +12412,14 @@
             "count_change": -131000,
             "weight_change": -0.28,
             "status": "減持"
+          },
+          {
+            "date": "2025/10/30",
+            "count": 0,
+            "weight": 0.0,
+            "count_change": -263000,
+            "weight_change": -0.37,
+            "status": "出清"
           }
         ]
       },
@@ -13337,12 +13489,12 @@
     "etf_holdings": {
       "00980A": {
         "etf_name": "野村臺灣智慧優選主動式ETF",
-        "current_count": 521000,
-        "current_weight": 1.07,
+        "current_count": 0,
+        "current_weight": 0.0,
         "max_count": 521000,
         "max_count_date": "2025/08/21",
-        "min_count": 357000,
-        "min_count_date": "2025/08/06",
+        "min_count": 0,
+        "min_count_date": "2025/09/05",
         "history": [
           {
             "date": "2025/08/06",
@@ -13399,6 +13551,14 @@
             "count_change": 21000,
             "weight_change": 0.04,
             "status": "增持"
+          },
+          {
+            "date": "2025/09/05",
+            "count": 0,
+            "weight": 0.0,
+            "count_change": -521000,
+            "weight_change": -1.07,
+            "status": "出清"
           }
         ]
       }
@@ -13533,12 +13693,12 @@
       },
       "00981A": {
         "etf_name": "統一台股增長",
-        "current_count": 71000,
-        "current_weight": 0.62,
+        "current_count": 0,
+        "current_weight": 0.0,
         "max_count": 93000,
         "max_count_date": "2025/08/06",
-        "min_count": 71000,
-        "min_count_date": "2025/08/18",
+        "min_count": 0,
+        "min_count_date": "2025/08/19",
         "history": [
           {
             "date": "2025/08/06",
@@ -13555,6 +13715,14 @@
             "count_change": -22000,
             "weight_change": -0.79,
             "status": "減持"
+          },
+          {
+            "date": "2025/08/19",
+            "count": 0,
+            "weight": 0.0,
+            "count_change": -71000,
+            "weight_change": -0.62,
+            "status": "出清"
           }
         ]
       },
@@ -13841,12 +14009,12 @@
     "etf_holdings": {
       "00980A": {
         "etf_name": "野村臺灣智慧優選主動式ETF",
-        "current_count": 374000,
-        "current_weight": 0.76,
+        "current_count": 0,
+        "current_weight": 0.0,
         "max_count": 902000,
         "max_count_date": "2025/09/09",
-        "min_count": 374000,
-        "min_count_date": "2025/10/28",
+        "min_count": 0,
+        "min_count_date": "2025/10/30",
         "history": [
           {
             "date": "2025/08/06",
@@ -13927,6 +14095,14 @@
             "count_change": -187000,
             "weight_change": -0.47,
             "status": "減持"
+          },
+          {
+            "date": "2025/10/30",
+            "count": 0,
+            "weight": 0.0,
+            "count_change": -374000,
+            "weight_change": -0.76,
+            "status": "出清"
           }
         ]
       }
@@ -14009,8 +14185,8 @@
         "current_weight": 1.36,
         "max_count": 2966000,
         "max_count_date": "2025/09/04",
-        "min_count": 16000,
-        "min_count_date": "2025/10/23",
+        "min_count": 0,
+        "min_count_date": "2025/09/16",
         "history": [
           {
             "date": "2025/08/06",
@@ -14109,12 +14285,20 @@
             "status": "減持"
           },
           {
+            "date": "2025/09/16",
+            "count": 0,
+            "weight": 0.0,
+            "count_change": -1366000,
+            "weight_change": -0.93,
+            "status": "出清"
+          },
+          {
             "date": "2025/10/23",
             "count": 16000,
             "weight": 0.01,
-            "count_change": -1350000,
-            "weight_change": -0.92,
-            "status": "減持"
+            "count_change": 0,
+            "weight_change": 0.01,
+            "status": "首次出現"
           },
           {
             "date": "2025/10/27",
@@ -14255,12 +14439,12 @@
     "etf_holdings": {
       "00980A": {
         "etf_name": "野村臺灣智慧優選主動式ETF",
-        "current_count": 2907000,
-        "current_weight": 1.37,
+        "current_count": 0,
+        "current_weight": 0.0,
         "max_count": 2907000,
         "max_count_date": "2025/08/21",
-        "min_count": 1990000,
-        "min_count_date": "2025/08/06",
+        "min_count": 0,
+        "min_count_date": "2025/09/05",
         "history": [
           {
             "date": "2025/08/06",
@@ -14317,6 +14501,14 @@
             "count_change": 116000,
             "weight_change": 0.07,
             "status": "增持"
+          },
+          {
+            "date": "2025/09/05",
+            "count": 0,
+            "weight": 0.0,
+            "count_change": -2907000,
+            "weight_change": -1.37,
+            "status": "出清"
           }
         ]
       }
@@ -14733,12 +14925,12 @@
     "etf_holdings": {
       "00980A": {
         "etf_name": "野村臺灣智慧優選主動式ETF",
-        "current_count": 63000,
-        "current_weight": 0.37,
+        "current_count": 0,
+        "current_weight": 0.0,
         "max_count": 63000,
         "max_count_date": "2025/09/09",
-        "min_count": 55000,
-        "min_count_date": "2025/08/06",
+        "min_count": 0,
+        "min_count_date": "2025/09/24",
         "history": [
           {
             "date": "2025/08/06",
@@ -14771,6 +14963,14 @@
             "count_change": 2000,
             "weight_change": -0.17,
             "status": "增持"
+          },
+          {
+            "date": "2025/09/24",
+            "count": 0,
+            "weight": 0.0,
+            "count_change": -63000,
+            "weight_change": -0.37,
+            "status": "出清"
           }
         ]
       }
@@ -15249,12 +15449,12 @@
       },
       "00982A": {
         "etf_name": "群益台灣精選強棒主動式ETF基金",
-        "current_count": 30000,
-        "current_weight": 0.32,
+        "current_count": 0,
+        "current_weight": 0.0,
         "max_count": 203000,
         "max_count_date": "2025/08/14",
-        "min_count": 30000,
-        "min_count_date": "2025/08/21",
+        "min_count": 0,
+        "min_count_date": "2025/08/22",
         "history": [
           {
             "date": "2025/08/06",
@@ -15335,6 +15535,14 @@
             "count_change": -31000,
             "weight_change": -0.35,
             "status": "減持"
+          },
+          {
+            "date": "2025/08/22",
+            "count": 0,
+            "weight": 0.0,
+            "count_change": -30000,
+            "weight_change": -0.32,
+            "status": "出清"
           }
         ]
       }
@@ -15427,12 +15635,12 @@
     "etf_holdings": {
       "00980A": {
         "etf_name": "野村臺灣智慧優選主動式ETF",
-        "current_count": 1043000,
-        "current_weight": 1.76,
+        "current_count": 0,
+        "current_weight": 0.0,
         "max_count": 1043000,
         "max_count_date": "2025/08/21",
-        "min_count": 715000,
-        "min_count_date": "2025/08/06",
+        "min_count": 0,
+        "min_count_date": "2025/09/05",
         "history": [
           {
             "date": "2025/08/06",
@@ -15489,6 +15697,14 @@
             "count_change": 41000,
             "weight_change": 0.04,
             "status": "增持"
+          },
+          {
+            "date": "2025/09/05",
+            "count": 0,
+            "weight": 0.0,
+            "count_change": -1043000,
+            "weight_change": -1.76,
+            "status": "出清"
           }
         ]
       }
@@ -15500,12 +15716,12 @@
     "etf_holdings": {
       "00980A": {
         "etf_name": "野村臺灣智慧優選主動式ETF",
-        "current_count": 229000,
-        "current_weight": 0.58,
+        "current_count": 0,
+        "current_weight": 0.0,
         "max_count": 229000,
         "max_count_date": "2025/08/08",
-        "min_count": 207000,
-        "min_count_date": "2025/08/06",
+        "min_count": 0,
+        "min_count_date": "2025/09/05",
         "history": [
           {
             "date": "2025/08/06",
@@ -15530,6 +15746,14 @@
             "count_change": 8000,
             "weight_change": 0.0,
             "status": "增持"
+          },
+          {
+            "date": "2025/09/05",
+            "count": 0,
+            "weight": 0.0,
+            "count_change": -229000,
+            "weight_change": -0.58,
+            "status": "出清"
           }
         ]
       }
@@ -15814,12 +16038,12 @@
     "etf_holdings": {
       "00981A": {
         "etf_name": "統一台股增長",
-        "current_count": 1832000,
-        "current_weight": 1.54,
+        "current_count": 0,
+        "current_weight": 0.0,
         "max_count": 3399000,
         "max_count_date": "2025/09/01",
-        "min_count": 787000,
-        "min_count_date": "2025/08/06",
+        "min_count": 0,
+        "min_count_date": "2025/09/24",
         "history": [
           {
             "date": "2025/08/06",
@@ -15964,6 +16188,14 @@
             "count_change": -708000,
             "weight_change": -0.61,
             "status": "減持"
+          },
+          {
+            "date": "2025/09/24",
+            "count": 0,
+            "weight": 0.0,
+            "count_change": -1832000,
+            "weight_change": -1.54,
+            "status": "出清"
           }
         ]
       }
@@ -16540,12 +16772,12 @@
     "etf_holdings": {
       "00982A": {
         "etf_name": "群益台灣精選強棒主動式ETF基金",
-        "current_count": 79000,
-        "current_weight": 0.11,
+        "current_count": 0,
+        "current_weight": 0.0,
         "max_count": 88000,
         "max_count_date": "2025/08/06",
-        "min_count": 79000,
-        "min_count_date": "2025/09/15",
+        "min_count": 0,
+        "min_count_date": "2025/09/17",
         "history": [
           {
             "date": "2025/08/06",
@@ -16570,6 +16802,14 @@
             "count_change": -8000,
             "weight_change": 0.0,
             "status": "減持"
+          },
+          {
+            "date": "2025/09/17",
+            "count": 0,
+            "weight": 0.0,
+            "count_change": -79000,
+            "weight_change": -0.11,
+            "status": "出清"
           }
         ]
       }
@@ -17136,12 +17376,12 @@
     "etf_holdings": {
       "00981A": {
         "etf_name": "統一台股增長",
-        "current_count": 974000,
-        "current_weight": 0.33,
+        "current_count": 0,
+        "current_weight": 0.0,
         "max_count": 2175000,
         "max_count_date": "2025/08/20",
-        "min_count": 974000,
-        "min_count_date": "2025/09/05",
+        "min_count": 0,
+        "min_count_date": "2025/09/08",
         "history": [
           {
             "date": "2025/08/19",
@@ -17166,6 +17406,14 @@
             "count_change": -1201000,
             "weight_change": -0.55,
             "status": "減持"
+          },
+          {
+            "date": "2025/09/08",
+            "count": 0,
+            "weight": 0.0,
+            "count_change": -974000,
+            "weight_change": -0.33,
+            "status": "出清"
           }
         ]
       }
@@ -19442,12 +19690,12 @@
       },
       "00982A": {
         "etf_name": "群益台灣精選強棒主動式ETF基金",
-        "current_count": 121000,
-        "current_weight": 0.04,
+        "current_count": 0,
+        "current_weight": 0.0,
         "max_count": 804000,
         "max_count_date": "2025/08/07",
-        "min_count": 121000,
-        "min_count_date": "2025/08/21",
+        "min_count": 0,
+        "min_count_date": "2025/08/27",
         "history": [
           {
             "date": "2025/08/06",
@@ -19496,6 +19744,14 @@
             "count_change": -121000,
             "weight_change": -0.05,
             "status": "減持"
+          },
+          {
+            "date": "2025/08/27",
+            "count": 0,
+            "weight": 0.0,
+            "count_change": -121000,
+            "weight_change": -0.04,
+            "status": "出清"
           }
         ]
       }
@@ -19744,12 +20000,12 @@
       },
       "00982A": {
         "etf_name": "群益台灣精選強棒主動式ETF基金",
-        "current_count": 8000,
-        "current_weight": 0.28,
+        "current_count": 0,
+        "current_weight": 0.0,
         "max_count": 57000,
         "max_count_date": "2025/08/14",
-        "min_count": 8000,
-        "min_count_date": "2025/08/21",
+        "min_count": 0,
+        "min_count_date": "2025/08/22",
         "history": [
           {
             "date": "2025/08/06",
@@ -19830,6 +20086,14 @@
             "count_change": -9000,
             "weight_change": -0.29,
             "status": "減持"
+          },
+          {
+            "date": "2025/08/22",
+            "count": 0,
+            "weight": 0.0,
+            "count_change": -8000,
+            "weight_change": -0.28,
+            "status": "出清"
           }
         ]
       }
@@ -20076,12 +20340,12 @@
     "etf_holdings": {
       "00981A": {
         "etf_name": "統一台股增長",
-        "current_count": 455000,
-        "current_weight": 0.43,
+        "current_count": 0,
+        "current_weight": 0.0,
         "max_count": 455000,
         "max_count_date": "2025/08/06",
-        "min_count": 455000,
-        "min_count_date": "2025/08/06",
+        "min_count": 0,
+        "min_count_date": "2025/08/12",
         "history": [
           {
             "date": "2025/08/06",
@@ -20090,17 +20354,25 @@
             "count_change": 0,
             "weight_change": 0.43,
             "status": "首次出現"
+          },
+          {
+            "date": "2025/08/12",
+            "count": 0,
+            "weight": 0.0,
+            "count_change": -455000,
+            "weight_change": -0.43,
+            "status": "出清"
           }
         ]
       },
       "00982A": {
         "etf_name": "群益台灣精選強棒主動式ETF基金",
-        "current_count": 75000,
-        "current_weight": 0.03,
+        "current_count": 0,
+        "current_weight": 0.0,
         "max_count": 500000,
         "max_count_date": "2025/08/06",
-        "min_count": 75000,
-        "min_count_date": "2025/08/21",
+        "min_count": 0,
+        "min_count_date": "2025/08/22",
         "history": [
           {
             "date": "2025/08/06",
@@ -20149,6 +20421,14 @@
             "count_change": -75000,
             "weight_change": -0.03,
             "status": "減持"
+          },
+          {
+            "date": "2025/08/22",
+            "count": 0,
+            "weight": 0.0,
+            "count_change": -75000,
+            "weight_change": -0.03,
+            "status": "出清"
           }
         ]
       }
@@ -20750,12 +21030,12 @@
       },
       "00982A": {
         "etf_name": "群益台灣精選強棒主動式ETF基金",
-        "current_count": 29000,
-        "current_weight": 0.03,
+        "current_count": 0,
+        "current_weight": 0.0,
         "max_count": 129000,
         "max_count_date": "2025/08/12",
-        "min_count": 29000,
-        "min_count_date": "2025/08/21",
+        "min_count": 0,
+        "min_count_date": "2025/10/27",
         "history": [
           {
             "date": "2025/08/06",
@@ -20820,6 +21100,14 @@
             "count_change": -10000,
             "weight_change": -0.01,
             "status": "減持"
+          },
+          {
+            "date": "2025/10/27",
+            "count": 0,
+            "weight": 0.0,
+            "count_change": -29000,
+            "weight_change": -0.03,
+            "status": "出清"
           }
         ]
       }
@@ -20831,12 +21119,12 @@
     "etf_holdings": {
       "00981A": {
         "etf_name": "統一台股增長",
-        "current_count": 122000,
-        "current_weight": 0.02,
+        "current_count": 0,
+        "current_weight": 0.0,
         "max_count": 818000,
         "max_count_date": "2025/08/14",
-        "min_count": 122000,
-        "min_count_date": "2025/10/01",
+        "min_count": 0,
+        "min_count_date": "2025/10/02",
         "history": [
           {
             "date": "2025/08/06",
@@ -20861,6 +21149,14 @@
             "count_change": -696000,
             "weight_change": -0.29,
             "status": "減持"
+          },
+          {
+            "date": "2025/10/02",
+            "count": 0,
+            "weight": 0.0,
+            "count_change": -122000,
+            "weight_change": -0.02,
+            "status": "出清"
           }
         ]
       },
@@ -20967,8 +21263,8 @@
         "current_weight": 0,
         "max_count": 658000,
         "max_count_date": "2025/10/31",
-        "min_count": 1000,
-        "min_count_date": "2025/11/04",
+        "min_count": 0,
+        "min_count_date": "2025/08/26",
         "history": [
           {
             "date": "2025/08/25",
@@ -20979,12 +21275,20 @@
             "status": "首次出現"
           },
           {
+            "date": "2025/08/26",
+            "count": 0,
+            "weight": 0.0,
+            "count_change": -4000,
+            "weight_change": 0.0,
+            "status": "出清"
+          },
+          {
             "date": "2025/10/23",
             "count": 627000,
             "weight": 0.68,
-            "count_change": 623000,
+            "count_change": 0,
             "weight_change": 0.68,
-            "status": "增持"
+            "status": "首次出現"
           },
           {
             "date": "2025/10/29",
@@ -21032,8 +21336,8 @@
         "current_weight": 0,
         "max_count": 8959000,
         "max_count_date": "2025/10/13",
-        "min_count": 1000,
-        "min_count_date": "2025/10/28",
+        "min_count": 0,
+        "min_count_date": "2025/08/19",
         "history": [
           {
             "date": "2025/08/06",
@@ -21100,12 +21404,20 @@
             "status": "減持"
           },
           {
+            "date": "2025/08/19",
+            "count": 0,
+            "weight": 0.0,
+            "count_change": -2447000,
+            "weight_change": -0.86,
+            "status": "出清"
+          },
+          {
             "date": "2025/09/22",
             "count": 1498000,
             "weight": 0.28,
-            "count_change": -949000,
-            "weight_change": -0.58,
-            "status": "減持"
+            "count_change": 0,
+            "weight_change": 0.28,
+            "status": "首次出現"
           },
           {
             "date": "2025/09/23",
@@ -21569,12 +21881,12 @@
     "etf_holdings": {
       "00982A": {
         "etf_name": "群益台灣精選強棒主動式ETF基金",
-        "current_count": 264000,
-        "current_weight": 0.23,
+        "current_count": 0,
+        "current_weight": 0.0,
         "max_count": 1760000,
         "max_count_date": "2025/08/14",
-        "min_count": 264000,
-        "min_count_date": "2025/08/21",
+        "min_count": 0,
+        "min_count_date": "2025/08/22",
         "history": [
           {
             "date": "2025/08/06",
@@ -21663,6 +21975,14 @@
             "count_change": -265000,
             "weight_change": -0.23,
             "status": "減持"
+          },
+          {
+            "date": "2025/08/22",
+            "count": 0,
+            "weight": 0.0,
+            "count_change": -264000,
+            "weight_change": -0.23,
+            "status": "出清"
           }
         ]
       }
@@ -22309,12 +22629,12 @@
     "etf_holdings": {
       "00982A": {
         "etf_name": "群益台灣精選強棒主動式ETF基金",
-        "current_count": 143000,
-        "current_weight": 0.31,
+        "current_count": 0,
+        "current_weight": 0.0,
         "max_count": 951000,
         "max_count_date": "2025/08/14",
-        "min_count": 143000,
-        "min_count_date": "2025/08/21",
+        "min_count": 0,
+        "min_count_date": "2025/08/22",
         "history": [
           {
             "date": "2025/08/06",
@@ -22403,6 +22723,14 @@
             "count_change": -143000,
             "weight_change": -0.3,
             "status": "減持"
+          },
+          {
+            "date": "2025/08/22",
+            "count": 0,
+            "weight": 0.0,
+            "count_change": -143000,
+            "weight_change": -0.31,
+            "status": "出清"
           }
         ]
       }
@@ -22640,12 +22968,12 @@
     "etf_holdings": {
       "00982A": {
         "etf_name": "群益台灣精選強棒主動式ETF基金",
-        "current_count": 38000,
-        "current_weight": 0.33,
+        "current_count": 0,
+        "current_weight": 0.0,
         "max_count": 254000,
         "max_count_date": "2025/08/14",
-        "min_count": 38000,
-        "min_count_date": "2025/08/21",
+        "min_count": 0,
+        "min_count_date": "2025/08/22",
         "history": [
           {
             "date": "2025/08/06",
@@ -22726,6 +23054,14 @@
             "count_change": -38000,
             "weight_change": -0.34,
             "status": "減持"
+          },
+          {
+            "date": "2025/08/22",
+            "count": 0,
+            "weight": 0.0,
+            "count_change": -38000,
+            "weight_change": -0.33,
+            "status": "出清"
           }
         ]
       }
@@ -23203,12 +23539,12 @@
     "etf_holdings": {
       "00982A": {
         "etf_name": "群益台灣精選強棒主動式ETF基金",
-        "current_count": 315000,
-        "current_weight": 0.29,
+        "current_count": 0,
+        "current_weight": 0.0,
         "max_count": 2145000,
         "max_count_date": "2025/08/12",
-        "min_count": 315000,
-        "min_count_date": "2025/08/21",
+        "min_count": 0,
+        "min_count_date": "2025/08/22",
         "history": [
           {
             "date": "2025/08/06",
@@ -23297,6 +23633,14 @@
             "count_change": -315000,
             "weight_change": -0.31,
             "status": "減持"
+          },
+          {
+            "date": "2025/08/22",
+            "count": 0,
+            "weight": 0.0,
+            "count_change": -315000,
+            "weight_change": -0.29,
+            "status": "出清"
           }
         ]
       }
@@ -23477,12 +23821,12 @@
     "etf_holdings": {
       "00982A": {
         "etf_name": "群益台灣精選強棒主動式ETF基金",
-        "current_count": 10000,
-        "current_weight": 0.04,
+        "current_count": 0,
+        "current_weight": 0.0,
         "max_count": 71000,
         "max_count_date": "2025/08/06",
-        "min_count": 10000,
-        "min_count_date": "2025/08/21",
+        "min_count": 0,
+        "min_count_date": "2025/09/24",
         "history": [
           {
             "date": "2025/08/06",
@@ -23523,6 +23867,14 @@
             "count_change": -11000,
             "weight_change": -0.04,
             "status": "減持"
+          },
+          {
+            "date": "2025/09/24",
+            "count": 0,
+            "weight": 0.0,
+            "count_change": -10000,
+            "weight_change": -0.04,
+            "status": "出清"
           }
         ]
       }
@@ -23534,12 +23886,12 @@
     "etf_holdings": {
       "00982A": {
         "etf_name": "群益台灣精選強棒主動式ETF基金",
-        "current_count": 457000,
-        "current_weight": 0.13,
+        "current_count": 0,
+        "current_weight": 0.0,
         "max_count": 3039000,
         "max_count_date": "2025/08/14",
-        "min_count": 457000,
-        "min_count_date": "2025/08/21",
+        "min_count": 0,
+        "min_count_date": "2025/08/22",
         "history": [
           {
             "date": "2025/08/06",
@@ -23620,6 +23972,14 @@
             "count_change": -457000,
             "weight_change": -0.14,
             "status": "減持"
+          },
+          {
+            "date": "2025/08/22",
+            "count": 0,
+            "weight": 0.0,
+            "count_change": -457000,
+            "weight_change": -0.13,
+            "status": "出清"
           }
         ]
       }
@@ -23833,12 +24193,12 @@
     "etf_holdings": {
       "00982A": {
         "etf_name": "群益台灣精選強棒主動式ETF基金",
-        "current_count": 895000,
-        "current_weight": 0.17,
+        "current_count": 0,
+        "current_weight": 0.0,
         "max_count": 5955000,
         "max_count_date": "2025/08/14",
-        "min_count": 895000,
-        "min_count_date": "2025/08/21",
+        "min_count": 0,
+        "min_count_date": "2025/08/22",
         "history": [
           {
             "date": "2025/08/06",
@@ -23919,6 +24279,14 @@
             "count_change": -896000,
             "weight_change": -0.19,
             "status": "減持"
+          },
+          {
+            "date": "2025/08/22",
+            "count": 0,
+            "weight": 0.0,
+            "count_change": -895000,
+            "weight_change": -0.17,
+            "status": "出清"
           }
         ]
       }
@@ -23930,12 +24298,12 @@
     "etf_holdings": {
       "00982A": {
         "etf_name": "群益台灣精選強棒主動式ETF基金",
-        "current_count": 199000,
-        "current_weight": 0.16,
+        "current_count": 0,
+        "current_weight": 0.0,
         "max_count": 1322000,
         "max_count_date": "2025/08/14",
-        "min_count": 199000,
-        "min_count_date": "2025/08/21",
+        "min_count": 0,
+        "min_count_date": "2025/08/22",
         "history": [
           {
             "date": "2025/08/06",
@@ -24000,6 +24368,14 @@
             "count_change": -199000,
             "weight_change": -0.18,
             "status": "減持"
+          },
+          {
+            "date": "2025/08/22",
+            "count": 0,
+            "weight": 0.0,
+            "count_change": -199000,
+            "weight_change": -0.16,
+            "status": "出清"
           }
         ]
       }
@@ -24543,12 +24919,12 @@
     "etf_holdings": {
       "00982A": {
         "etf_name": "群益台灣精選強棒主動式ETF基金",
-        "current_count": 847000,
-        "current_weight": 0.15,
+        "current_count": 0,
+        "current_weight": 0.0,
         "max_count": 4615000,
         "max_count_date": "2025/09/01",
-        "min_count": 847000,
-        "min_count_date": "2025/09/22",
+        "min_count": 0,
+        "min_count_date": "2025/09/23",
         "history": [
           {
             "date": "2025/08/22",
@@ -24581,6 +24957,14 @@
             "count_change": -1533000,
             "weight_change": -0.27,
             "status": "減持"
+          },
+          {
+            "date": "2025/09/23",
+            "count": 0,
+            "weight": 0.0,
+            "count_change": -847000,
+            "weight_change": -0.15,
+            "status": "出清"
           }
         ]
       }
