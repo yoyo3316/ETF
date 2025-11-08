@@ -76,7 +76,6 @@ body {font-family: 'Segoe UI', Tahoma; background: #f9fbfc; color: #333;}
 .etf-price-change.negative {color: #e74c3c;}
 .etf-price-change.positive {color: #27ae60;}
 
-/* 回到卡片網格式 */
 .changes-grid {display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 18px;}
 .change-card {
     background: white;
@@ -89,15 +88,19 @@ body {font-family: 'Segoe UI', Tahoma; background: #f9fbfc; color: #333;}
     box-shadow: 0 1px 4px rgba(0,0,0,0.05);
 }
 .change-card:hover {box-shadow: 0 6px 16px rgba(84, 110, 237, 0.15); transform: translateY(-3px);}
+.change-card.new-add {border-left-color: #27ae60;}
+.change-card.delete {border-left-color: #e74c3c;}
 
 .change-card-header {display: flex; justify-content: space-between; align-items: start; margin-bottom: 14px; padding-bottom: 12px; border-bottom: 1px solid #f0f0f0;}
+.change-code-name {flex: 1;}
 .change-code {font-size: 18px; font-weight: bold; color: #222;}
-.change-name {font-size: 12px; color: #888; margin-top: 3px;}
+.change-name {font-size: 12px; color: #666; margin-top: 3px;}
 
-.badge {display: inline-block; padding: 4px 12px; border-radius: 12px; font-size: 12px; font-weight: 600;}
-.badge.new {background: #d4edda; color: #155724;}
-.badge.add {background: #d1ecf1; color: #0c5460;}
-.badge.reduce {background: #f8d7da; color: #721c24;}
+.badge {display: inline-block; padding: 6px 14px; border-radius: 12px; font-size: 12px; font-weight: 600;}
+.badge.new {background: #d4edda; color: #155724; border: 1px solid #c3e6cb;}
+.badge.add {background: #d1ecf1; color: #0c5460; border: 1px solid #bee5eb;}
+.badge.reduce {background: #f8d7da; color: #721c24; border: 1px solid #f5c6cb;}
+.badge.delete {background: #f8d7da; color: #721c24; border: 1px solid #f5c6cb;}
 
 .change-stats {display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px;}
 .stat-item {background: #f9fbfc; padding: 12px; border-radius: 6px;}
@@ -113,7 +116,7 @@ body {font-family: 'Segoe UI', Tahoma; background: #f9fbfc; color: #333;}
 .stock-item {padding: 15px 20px; border-bottom: 1px solid #f0f0f0; cursor: pointer; transition: background 0.2s;}
 .stock-item:hover {background: #f9fbfc;}
 .stock-code {font-size: 16px; font-weight: bold; color: #546ded;}
-.stock-name {font-size: 12px; color: #888; margin-top: 3px;}
+.stock-name {font-size: 12px; color: #666; margin-top: 3px;}
 
 .hidden {display: none;}
 
@@ -255,7 +258,7 @@ function switchETF(code) {
 }
 
 function formatNumber(num) {
-    return Math.floor(num).toLocaleString('en-US');
+    return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
 }
 
 function renderChanges() {
@@ -282,17 +285,19 @@ function renderChanges() {
     }
     
     data.daily_changes.forEach(change => {
-        const badgeClass = change.type === '新增' ? 'new' : change.type === '增持' ? 'add' : 'reduce';
-        const card = document.createElement('div');
-        card.className = 'change-card';
-        card.onclick = () => showStockDetail(change.code, currentETF);
+        const badgeClass = change.type === '新增' ? 'new' : change.type === '增持' ? 'add' : change.type === '減持' ? 'reduce' : 'delete';
+        const cardClass = change.type === '新增' ? 'new-add' : change.type === '刪除' ? 'delete' : '';
         
         const countChangeStr = change.count_change >= 0 ? '+' : '';
         const weightChangeStr = change.weight_change >= 0 ? '+' : '';
         
+        const card = document.createElement('div');
+        card.className = `change-card ${cardClass}`;
+        card.onclick = () => showStockDetail(change.code, currentETF);
+        
         card.innerHTML = `
             <div class="change-card-header">
-                <div>
+                <div class="change-code-name">
                     <div class="change-code">${change.code}</div>
                     <div class="change-name">${change.name}</div>
                 </div>
@@ -341,8 +346,7 @@ function renderStockList(stocks) {
             showStockDetail(stock.code, firstETF);
         };
         item.innerHTML = `
-            <div class="stock-code">${stock.code}</div>
-            <div class="stock-name">${stock.name || ""}</div>
+            <div class="stock-code">${stock.code} ${stock.name}</div>
         `;
         list.appendChild(item);
     });
