@@ -17,17 +17,8 @@ body {font-family: 'Segoe UI', Tahoma; background: #f9fbfc; color: #333;}
     box-shadow: 0 2px 8px rgba(102, 126, 234, 0.15);
 }
 
-.gradient-header h1 {
-    font-size: 32px;
-    font-weight: 600;
-    margin-bottom: 12px;
-}
-
-.gradient-header p {
-    font-size: 13px;
-    opacity: 0.9;
-    margin: 5px 0;
-}
+.gradient-header h1 {font-size: 32px; font-weight: 600; margin-bottom: 12px;}
+.gradient-header p {font-size: 13px; opacity: 0.9; margin: 5px 0;}
 
 .container {max-width: 1200px; margin: 0 auto; padding: 0 20px;}
 
@@ -77,19 +68,28 @@ body {font-family: 'Segoe UI', Tahoma; background: #f9fbfc; color: #333;}
 .etf-price-change.positive {color: #27ae60;}
 
 .changes-grid {display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 18px;}
+
 .change-card {
     background: white;
-    border-left: 4px solid #546ded;
+    border-left: 6px solid #546ded;
     border-radius: 8px;
     padding: 16px;
     cursor: pointer;
     transition: all 0.2s;
     border: 1px solid #f0f0f0;
     box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+    position: relative;
 }
+
 .change-card:hover {box-shadow: 0 6px 16px rgba(84, 110, 237, 0.15); transform: translateY(-3px);}
-.change-card.new-add {border-left-color: #27ae60;}
-.change-card.delete {border-left-color: #e74c3c;}
+
+/* 新增邊框加粗特效 */
+.change-card.new-add {border-left: 8px solid #27ae60; box-shadow: inset 8px 0 0 -6px rgba(39, 174, 96, 0.5), 0 1px 4px rgba(0,0,0,0.05);}
+.change-card.new-add:hover {box-shadow: inset 8px 0 0 -6px rgba(39, 174, 96, 0.8), 0 6px 16px rgba(39, 174, 96, 0.2);}
+
+/* 刪除邊框加粗特效 */
+.change-card.delete {border-left: 8px solid #e74c3c; box-shadow: inset 8px 0 0 -6px rgba(231, 76, 60, 0.5), 0 1px 4px rgba(0,0,0,0.05);}
+.change-card.delete:hover {box-shadow: inset 8px 0 0 -6px rgba(231, 76, 60, 0.8), 0 6px 16px rgba(231, 76, 60, 0.2);}
 
 .change-card-header {display: flex; justify-content: space-between; align-items: start; margin-bottom: 14px; padding-bottom: 12px; border-bottom: 1px solid #f0f0f0;}
 .change-code-name {flex: 1;}
@@ -97,10 +97,10 @@ body {font-family: 'Segoe UI', Tahoma; background: #f9fbfc; color: #333;}
 .change-name {font-size: 12px; color: #666; margin-top: 3px;}
 
 .badge {display: inline-block; padding: 6px 14px; border-radius: 12px; font-size: 12px; font-weight: 600;}
-.badge.new {background: #d4edda; color: #155724; border: 1px solid #c3e6cb;}
+.badge.new {background: #d4edda; color: #155724; border: 2px solid #28a745; box-shadow: 0 0 12px rgba(40, 167, 69, 0.3);}
 .badge.add {background: #d1ecf1; color: #0c5460; border: 1px solid #bee5eb;}
 .badge.reduce {background: #f8d7da; color: #721c24; border: 1px solid #f5c6cb;}
-.badge.delete {background: #f8d7da; color: #721c24; border: 1px solid #f5c6cb;}
+.badge.delete {background: #f8d7da; color: #721c24; border: 2px solid #dc3545; box-shadow: 0 0 12px rgba(220, 53, 69, 0.3);}
 
 .change-stats {display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px;}
 .stat-item {background: #f9fbfc; padding: 12px; border-radius: 6px;}
@@ -112,11 +112,32 @@ body {font-family: 'Segoe UI', Tahoma; background: #f9fbfc; color: #333;}
 .search-box {margin-bottom: 20px;}
 .search-box input {width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 4px; font-size: 14px;}
 
-.stocks-list {background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 1px 4px rgba(0,0,0,0.08);}
-.stock-item {padding: 15px 20px; border-bottom: 1px solid #f0f0f0; cursor: pointer; transition: background 0.2s;}
-.stock-item:hover {background: #f9fbfc;}
-.stock-code {font-size: 16px; font-weight: bold; color: #546ded;}
-.stock-name {font-size: 12px; color: #666; margin-top: 3px;}
+.stocks-grid {display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 15px;}
+
+.stock-card {
+    background: white;
+    border-radius: 8px;
+    padding: 16px;
+    border: 1px solid #f0f0f0;
+    cursor: pointer;
+    transition: all 0.2s;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+}
+
+.stock-card:hover {
+    box-shadow: 0 8px 20px rgba(84, 110, 237, 0.15);
+    transform: translateY(-3px);
+    border-color: #546ded;
+}
+
+.stock-card-header {margin-bottom: 12px; padding-bottom: 12px; border-bottom: 1px solid #f0f0f0;}
+.stock-code {font-size: 18px; font-weight: bold; color: #546ded;}
+.stock-name {font-size: 14px; color: #333; margin-top: 3px; font-weight: 500;}
+
+.stock-stats {display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; font-size: 13px;}
+.stock-stat {background: #f9fbfc; padding: 10px; border-radius: 4px;}
+.stock-stat-label {color: #999; margin-bottom: 3px;}
+.stock-stat-value {font-size: 14px; font-weight: bold; color: #222;}
 
 .hidden {display: none;}
 
@@ -161,6 +182,8 @@ table {width: 100%; border-collapse: collapse;}
 th {background: #f5f7fa; padding: 12px; text-align: left; font-weight: 600; font-size: 12px; color: #333; border-bottom: 1px solid #eee;}
 td {padding: 12px; border-bottom: 1px solid #f0f0f0; font-size: 13px;}
 tr:hover {background: #fafbfc;}
+
+.no-data {color: #999; text-align: center; padding: 30px; font-size: 14px;}
     </style>
 </head>
 <body>
@@ -195,7 +218,7 @@ tr:hover {background: #fafbfc;}
         <div class="search-box">
             <input type="text" id="searchInput" placeholder="搜尋股票代碼或名稱... 例如: 2330、台積電">
         </div>
-        <div class="stocks-list" id="stocksList"></div>
+        <div class="stocks-grid" id="stocksList"></div>
     </div>
 
     <!-- 詳細頁面 -->
@@ -335,20 +358,35 @@ function renderStockList(stocks) {
     const list = document.getElementById('stocksList');
     list.innerHTML = '';
     if (stocks.length === 0) {
-        list.innerHTML = '<p style="padding:20px;color:#999;text-align:center;">暫無股票數據</p>';
+        list.innerHTML = '<p class="no-data">暫無股票數據</p>';
         return;
     }
-    stocks.slice(0, 150).forEach(stock => {
-        const item = document.createElement('div');
-        item.className = 'stock-item';
-        item.onclick = () => {
-            const firstETF = Object.keys(stock.etf_holdings)[0];
-            showStockDetail(stock.code, firstETF);
-        };
-        item.innerHTML = `
-            <div class="stock-code">${stock.code} ${stock.name}</div>
+    stocks.slice(0, 200).forEach(stock => {
+        const firstETF = Object.keys(stock.etf_holdings)[0];
+        const etfCount = Object.keys(stock.etf_holdings).length;
+        const totalCount = Object.values(stock.etf_holdings).reduce((sum, etf) => sum + (etf.current_count || 0), 0);
+        
+        const card = document.createElement('div');
+        card.className = 'stock-card';
+        card.onclick = () => showStockDetail(stock.code, firstETF);
+        
+        card.innerHTML = `
+            <div class="stock-card-header">
+                <div class="stock-code">${stock.code}</div>
+                <div class="stock-name">${stock.name || '(無名稱)'}</div>
+            </div>
+            <div class="stock-stats">
+                <div class="stock-stat">
+                    <div class="stock-stat-label">持有ETF</div>
+                    <div class="stock-stat-value">${etfCount}</div>
+                </div>
+                <div class="stock-stat">
+                    <div class="stock-stat-label">總持股</div>
+                    <div class="stock-stat-value">${formatNumber(totalCount)}</div>
+                </div>
+            </div>
         `;
-        list.appendChild(item);
+        list.appendChild(card);
     });
 }
 
@@ -363,7 +401,7 @@ function showStockDetail(stockCode, etfCode) {
     document.getElementById('searchMode').classList.add('hidden');
     document.getElementById('detailPage').classList.add('active');
     
-    document.getElementById('detailTitle').textContent = `${stock.code} ${stock.name || ""}`;
+    document.getElementById('detailTitle').textContent = `${stock.code} ${stock.name || ''}`;
     
     const etfCount = Object.keys(stock.etf_holdings).length;
     const totalCount = Object.values(stock.etf_holdings).reduce((sum, etf) => sum + (etf.current_count || 0), 0);
@@ -398,7 +436,7 @@ function renderHistoryTable(etfCode) {
     const etfData = stock.etf_holdings[etfCode];
     
     if (!etfData || !etfData.history) {
-        document.getElementById('historyBody').innerHTML = '<tr><td colspan="6">暫無歷史數據</td></tr>';
+        document.getElementById('historyBody').innerHTML = '<tr><td colspan="6" class="no-data">暫無歷史數據</td></tr>';
         return;
     }
     
