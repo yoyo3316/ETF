@@ -63,7 +63,7 @@ body {font-family: 'Segoe UI', Tahoma; background: #f9fbfc; color: #333;}
     box-shadow: 0 1px 4px rgba(0,0,0,0.08);
 }
 
-.etf-tabs {display: flex; gap: 15px; margin-bottom: 20px; border-bottom: 1px solid #eee; padding-bottom: 15px;}
+.etf-tabs {display: flex; gap: 15px; margin-bottom: 20px; border-bottom: 1px solid #eee; padding-bottom: 15px; flex-wrap: wrap;}
 .etf-tab {background: none; border: none; cursor: pointer; color: #888; font-size: 14px; padding: 8px 15px; border-bottom: 2px solid transparent; transition: all 0.2s;}
 .etf-tab:hover {color: #546ded;}
 .etf-tab.active {color: #546ded; border-bottom-color: #546ded;}
@@ -76,34 +76,46 @@ body {font-family: 'Segoe UI', Tahoma; background: #f9fbfc; color: #333;}
 .etf-price-change.negative {color: #e74c3c;}
 .etf-price-change.positive {color: #27ae60;}
 
-.changes-grid {display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 18px;}
+/* 改為縱向排列 */
+.changes-list {display: flex; flex-direction: column; gap: 12px;}
 .change-card {
     background: white;
     border-left: 4px solid #546ded;
     border-radius: 6px;
-    padding: 16px;
+    padding: 15px;
     cursor: pointer;
     transition: all 0.2s;
     border: 1px solid #f0f0f0;
     box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-.change-card:hover {box-shadow: 0 4px 12px rgba(84, 110, 237, 0.15); transform: translateY(-2px);}
+.change-card:hover {box-shadow: 0 4px 12px rgba(84, 110, 237, 0.15); transform: translateX(4px);}
 
-.change-card-header {display: flex; justify-content: space-between; align-items: start; margin-bottom: 12px;}
-.change-code {font-size: 18px; font-weight: bold; color: #222;}
+.change-card-left {flex: 1;}
+.change-code {font-size: 16px; font-weight: bold; color: #222;}
 .change-name {font-size: 12px; color: #888; margin-top: 2px;}
 
+.change-card-middle {
+    flex: 2;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin: 0 20px;
+}
+
+.stat-inline {text-align: center;}
+.stat-inline-label {font-size: 11px; color: #999;}
+.stat-inline-value {font-size: 14px; font-weight: bold; color: #222; margin-top: 4px;}
+.stat-inline-value.positive {color: #27ae60;}
+.stat-inline-value.negative {color: #e74c3c;}
+
+.change-card-right {text-align: right;}
 .badge {display: inline-block; padding: 4px 10px; border-radius: 12px; font-size: 12px; font-weight: 600;}
 .badge.new {background: #d4edda; color: #155724;}
 .badge.add {background: #d1ecf1; color: #0c5460;}
 .badge.reduce {background: #f8d7da; color: #721c24;}
-
-.change-stats {display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-top: 12px;}
-.stat {background: #f9fbfc; padding: 10px; border-radius: 4px; text-align: center;}
-.stat-label {font-size: 11px; color: #999;}
-.stat-value {font-size: 13px; font-weight: bold; color: #222; margin-top: 4px;}
-.stat-value.positive {color: #27ae60;}
-.stat-value.negative {color: #e74c3c;}
 
 .search-box {margin-bottom: 20px;}
 .search-box input {width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 4px; font-size: 14px;}
@@ -183,7 +195,7 @@ tr:hover {background: #fafbfc;}
             <button class="etf-tab" onclick="switchETF('00982A')">00982A 群益強棒</button>
         </div>
         <div id="etfPriceInfo"></div>
-        <div id="changesGrid" class="changes-grid"></div>
+        <div id="changesGrid" class="changes-list"></div>
     </div>
 
     <!-- 股票查詢模式 -->
@@ -253,6 +265,10 @@ function switchETF(code) {
     renderChanges();
 }
 
+function formatNumber(num) {
+    return Math.floor(num).toLocaleString('en-US');
+}
+
 function renderChanges() {
     const data = processedData[currentETF];
     if (!data) return;
@@ -272,7 +288,7 @@ function renderChanges() {
     grid.innerHTML = '';
     
     if (!data.daily_changes || data.daily_changes.length === 0) {
-        grid.innerHTML = '<p style="color:#999;grid-column:1/-1;">今日無異動資料</p>';
+        grid.innerHTML = '<p style="color:#999;">今日無異動資料</p>';
         return;
     }
     
@@ -281,35 +297,41 @@ function renderChanges() {
         const card = document.createElement('div');
         card.className = 'change-card';
         card.onclick = () => showStockDetail(change.code, currentETF);
+        
+        const countChangeStr = change.count_change >= 0 ? '+' : '';
+        const weightChangeStr = change.weight_change >= 0 ? '+' : '';
+        
         card.innerHTML = `
-            <div class="change-card-header">
-                <div>
-                    <div class="change-code">${change.code}</div>
-                    <div class="change-name">${change.name}</div>
-                </div>
-                <span class="badge ${badgeClass}">${change.type}</span>
+            <div class="change-card-left">
+                <div class="change-code">${change.code}</div>
+                <div class="change-name">${change.name}</div>
             </div>
-            <div class="change-stats">
-                <div class="stat">
-                    <div class="stat-label">今日持股</div>
-                    <div class="stat-value">${(change.current_count / 1000).toFixed(0)}K</div>
+            
+            <div class="change-card-middle">
+                <div class="stat-inline">
+                    <div class="stat-inline-label">今日持股</div>
+                    <div class="stat-inline-value">${formatNumber(change.current_count)}</div>
                 </div>
-                <div class="stat">
-                    <div class="stat-label">今日權重</div>
-                    <div class="stat-value">${change.current_weight.toFixed(2)}%</div>
+                <div class="stat-inline">
+                    <div class="stat-inline-label">今日權重</div>
+                    <div class="stat-inline-value">${change.current_weight.toFixed(2)}%</div>
                 </div>
-                <div class="stat">
-                    <div class="stat-label">張數變動</div>
-                    <div class="stat-value ${change.count_change > 0 ? 'positive' : 'negative'}">
-                        ${change.count_change > 0 ? '+' : ''}${(change.count_change / 1000).toFixed(0)}K
+                <div class="stat-inline">
+                    <div class="stat-inline-label">張數變動</div>
+                    <div class="stat-inline-value ${change.count_change > 0 ? 'positive' : 'negative'}">
+                        ${countChangeStr}${formatNumber(change.count_change)}
                     </div>
                 </div>
-                <div class="stat">
-                    <div class="stat-label">權重變動</div>
-                    <div class="stat-value ${change.weight_change > 0 ? 'positive' : 'negative'}">
-                        ${change.weight_change > 0 ? '+' : ''}${change.weight_change.toFixed(2)}%
+                <div class="stat-inline">
+                    <div class="stat-inline-label">權重變動</div>
+                    <div class="stat-inline-value ${change.weight_change > 0 ? 'positive' : 'negative'}">
+                        ${weightChangeStr}${change.weight_change.toFixed(2)}%
                     </div>
                 </div>
+            </div>
+            
+            <div class="change-card-right">
+                <span class="badge ${badgeClass}">${change.type}</span>
             </div>
         `;
         grid.appendChild(card);
@@ -356,7 +378,7 @@ function showStockDetail(stockCode, etfCode) {
     
     document.getElementById('statsContainer').innerHTML = `
         <div class="stat-box"><div class="stat-box-value">${etfCount}</div><div class="stat-box-label">持有ETF數量</div></div>
-        <div class="stat-box"><div class="stat-box-value">${(totalCount / 1000).toFixed(1)}K</div><div class="stat-box-label">當前總持股</div></div>
+        <div class="stat-box"><div class="stat-box-value">${formatNumber(totalCount)}</div><div class="stat-box-label">當前總持股</div></div>
     `;
     
     // 建立ETF分頁
@@ -390,19 +412,20 @@ function renderHistoryTable(etfCode) {
     }
     
     let html = '';
-    // 按日期倒序排列
     const sortedHistory = [...etfData.history].sort((a, b) => {
         return new Date(b.date.replace(/\//g, '-')) - new Date(a.date.replace(/\//g, '-'));
     });
     
     sortedHistory.forEach(record => {
         const changeClass = record.count_change > 0 ? 'positive' : record.count_change < 0 ? 'negative' : '';
+        const countStr = record.count_change >= 0 ? '+' : '';
+        const weightStr = record.weight_change >= 0 ? '+' : '';
         html += `<tr>
             <td>${record.date}</td>
-            <td>${(record.count / 1000).toFixed(0)}K</td>
+            <td>${formatNumber(record.count)}</td>
             <td>${record.weight.toFixed(2)}%</td>
-            <td class="${changeClass}">${record.count_change >= 0 ? '+' : ''}${(record.count_change / 1000).toFixed(0)}K</td>
-            <td class="${changeClass}">${record.weight_change >= 0 ? '+' : ''}${record.weight_change.toFixed(2)}%</td>
+            <td class="${changeClass}">${countStr}${formatNumber(record.count_change)}</td>
+            <td class="${changeClass}">${weightStr}${record.weight_change.toFixed(2)}%</td>
             <td>${record.status}</td>
         </tr>`;
     });
